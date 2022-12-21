@@ -5,6 +5,8 @@
  * https://unpkg.com/browse/tailwindcss@latest/stubs/defaultConfig.stub.js
  */
 
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     content: [
         /**
@@ -42,7 +44,19 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                'umnp': {
+                    'primary': '#3DA9FC',
+                    'light': '#D8EEFE',
+                    'medium': '#25628D',
+                    'dark': '#25628D',
+                }
+            },
+            fontFamily: {
+                'sans': ['Poppins', defaultTheme.fontFamily.sans],
+            },
+        },
     },
     plugins: [
         /**
