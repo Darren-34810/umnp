@@ -8,8 +8,8 @@ def index(request):
 def portofolio(request):
     return render(request, 'portofolio.html')
 
-def about(request):
-    return render(request, 'about.html')
+def contact(request):
+    return render(request, 'contact.html')
 
 def portofolio_details(request,projectname):
     return render(
