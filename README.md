@@ -14,4 +14,4 @@
     ```
     python manage.py runserver
     ```
-- If the compiled classes hasn't been applied, try hard refreshing the browser with `Ctrl + F5` or `Ctrl + Shift + R`
+- If the compiled classes hasn't been applied, try hard-refreshing the browser with `Ctrl + F5` or `Ctrl + Shift + R`
