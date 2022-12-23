@@ -1,0 +1,49 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="flex items-center py-12 h-screen">
+        <div class="flex-row ml-60">
+            <p class="text-7xl font-bold text-blue-900">Portofolio</p>
+            <p class="w-5/6 py-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div>
+            <img src="aset2.png">
+        </div>
+    </div>
+
+    <div class="flex row bg-blue-100 h-screen ">
+        <div class="flex ml-44 py-20">
+            <p class="text-5xl font-bold text-blue-900">Portofolio Kami</p>
+        </div>
+        
+        <div class="columns-2 p-3">
+            <div class="bg-gray-400 text-white min-h-[10rem] shadow-lg rounded-md overflow-hidden m-3">
+                <img class="w-full object-cover" src="porto1.png" alt="Image">
+                <div class="p-5 flex-col gap-3 ">
+                    <div class="flex items-center gap-2">
+                        <span>Portofolio1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-400 text-white min-h-[10rem] shadow-lg rounded-md overflow-hidden m-3">
+                <img class="w-full object-cover" src="porto2.png" alt="Image">
+                <div class="p-5 flex-col gap-3">
+                    <div class="flex items-center gap-2">
+                            <span>Portofolio2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-400 text-white min-h-[10rem] shadow-lg rounded-md overflow-hidden m-3">
+                <img class="w-full object-cover" src="porto3.png" alt="Image">
+                <div class="p-5 flex-col gap-3">
+                    <div class="flex items-center gap-2">
+                        <span>Portofolio3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

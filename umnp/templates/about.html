@@ -1,0 +1,56 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+
+{% block content %}
+    <!--TEST-->
+    <div>
+        <!-- Hero Contact -->
+        <div class="bg-gray-200 min-h-screen">
+            <div class="h-screen flex justify-center items-center">
+                <div class="w-2/6">
+                    <h3 class="m-2 text-4xl text-[#094067] font-bold leading-none mb-3">
+                        Contact
+                    </h3>
+                    <p class="m-2 text-[#5F6C7B] py-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.
+                    </p>
+                </div>
+                <div class="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
+                    <div class="w">
+                        <img src="../static/image/hero_image_contact.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Inquiries -->
+        <div class="bg-[#d8eefe] flex flex-col justify-center items-center py-12">
+            <h6 class="text-lg md:text-4xl text-[#094067] font-bold text-center">
+                Contact Inquiries
+            </h6>
+
+            <div class="flex justify-center">
+                <div class="md:text-xl flex flex-col items-center max-w-xs my-4">
+                    <p class="text-lg text-black font-bold mb-2">Business</p>
+                    <p class="text-md text-[#5F6C7B] text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="md:text-xl flex flex-col items-center max-w-xs my-4">
+                    <p class="text-lg text-black font-bold mb-2">Career</p>
+                    <p class="text-md text-[#5F6C7B] text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="md:text-xl flex flex-col items-center max-w-xs my-4">
+                    <p class="text-lg text-black font-bold mb-2">Internship</p>
+                    <p class="text-md text-[#5F6C7B] text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="w-full h-screen bg-slate-800 opacity-75">
+        <div class="py-64 px-64 place-items-left flex flex-col">
+            <h1 class="text-7xl text-white font-bold">{{projectname}}</h1>
+            <button disabled class="w-32 mt-8 mb-6 text-sm bg-slate-400 text-white font-bold border-2 border-solid border-color-black px-4 py-2 rounded-lg">3D Animation</button>
+            <p class="text-lg text-white font-light w-3/4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque felis ut fermentum lobortis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc posuere tincidunt vestibulum. Ut a vestibulum eros. Etiam maximus laoreet urna, eget facilisis velit fermentum ut.  Pellentesque consectetur sed arcu et ullamcorper. Pellentesque at elementum justo. Sed id dictum erat.</p>
+        </div>
+    </div>
+
+    <div class="w-full h-max">
+        <div class="px-32 pt-28 pb-16">
+            <h1 class="text-4xl text-cyan-900 font-bold">Gallery</h1>
+        </div>
+        <div class="flex flex-col gap-y-2">
+            <video class="w-full px-32" controls>
+                <source src="http://127.0.0.1:8000/static/video/portofolio_detail.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="flex flex-row gap-x-2 w-full" style="padding-left: 8rem;padding-right:8.5rem">
+                <img class="w-1/2" src="http://127.0.0.1:8000/static/image/image.png">
+                <img class="w-1/2" height="320"src="http://127.0.0.1:8000/static/image/image.png">
+            </div>
+            <div class="flex flex-row gap-x-2 w-full" style="padding-left: 8rem;padding-right:8.5rem">
+                <img class="w-1/2" src="http://127.0.0.1:8000/static/image/image.png">
+                <img class="w-1/2" height="320"src="http://127.0.0.1:8000/static/image/image.png">
+            </div>
+        </div>
+    </div>
+{% endblock %}
