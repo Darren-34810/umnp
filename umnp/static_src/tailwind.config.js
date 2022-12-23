@@ -50,7 +50,7 @@ module.exports = {
                     'primary': '#3DA9FC',
                     'light': '#D8EEFE',
                     'medium': '#25628D',
-                    'dark': '#25628D',
+                    'dark': '#094067',
                 }
             },
             fontFamily: {
