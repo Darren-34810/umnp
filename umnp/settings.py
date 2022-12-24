@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "tailwind",
-    "umnp",
+    "umnp.static_src.app",
     "django_browser_reload",
 ]
 
