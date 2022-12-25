@@ -15,3 +15,13 @@
     python manage.py runserver
     ```
 - If the compiled classes hasn't been applied, try hard-refreshing the browser with `Ctrl + F5` or `Ctrl + Shift + R`
+
+## Database Data
+- Get Database Data by running the command below:
+    ```
+    python manage.py loaddata db.json
+    ```
+- Save Database Data by running the command below:
+    ```
+    python manage.py dumpdata > db.json
+    ```
