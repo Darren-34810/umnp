@@ -1,23 +1,16 @@
-<div class="md:flex md:items-center md:justify-around py-6">
-    <div class="flex items-center justify-between px-3">
-        <a href="#"><img src="https://umnpictures.com/static/img/UMNP-Logo-Horizontal.png" width="135" class="inline"></a>
-
-        <span class="block text-4xl cursor-pointer md:hidden" onclick="Menu(this)">
-            &equiv;
-        </span>
+<nav class="flex justify-between items-center px-5 sm:px-20 lg:px-28 py-8">
+    <a href="/">
+        <img src="https://umnpictures.com/static/img/UMNP-Logo-Horizontal.png" width="135" class="inline">
+    </a>
+    <span class="block lg:hidden text-4xl text-umnp-dark cursor-pointer" onclick="open_dropdown()">
+        &equiv;
+    </span>
+    <div id="dropdown" class="hidden lg:block w-screen lg:w-fit h-screen lg:h-fit absolute lg:static bg-[rgba(0,0,0,0.25)] lg:bg-transparent -ml-5 sm:-mx-20 -mt-8 lg:m-0 top-8 lg:top-0 z-10">
+        <ul class="w-full flex flex-col lg:flex-row gap-x-20 gap-y-10 bg-white lg:bg-transparent rounded-b-[32px] lg:rounded-none font-semibold text-xl text-umnp-dark py-12 lg:py-0">
+            <li class="text-center"><a href="/">Company</a></li>
+            <li class="text-center"><a href="/works">Works</a></li>
+            <li class="text-center"><a href="/career">Career</a></li>
+            <li class="text-center"><a href="/contact">Contact</a></li>
+        </ul>
     </div>
-    <ul class="md:flex md:items-center text-2xl text-blue-600 font-semibold z-[-1] md:z-auto md:static-absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-6 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-        <li class="mx-12 my-6 md:my-0">
-            <a href="#">Company</a>
-        </li>
-        <li class="mx-12 my-6 md:my-0">
-            <a href="#">Works</a>
-        </li>
-        <li class="mx-12 my-6 md:my-0">
-            <a href="#">Career</a>
-        </li>
-        <li class="mx-12 my-6 md:my-0">
-            <a href="#">Contact</a>
-        </li>
-    </ul>
-</div>
+</nav>
