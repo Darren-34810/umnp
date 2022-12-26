@@ -12,40 +12,35 @@
         </div>
     </div>
 
-    <div class="flex row bg-blue-100 h-screen ">
-        <div class="flex ml-44 py-20">
-            <p class="text-5xl font-bold text-blue-900">Portofolio Kami</p>
-        </div>
-        
-        <div class="columns-2 p-3">
-            <div class="bg-gray-400 text-white min-h-[10rem] shadow-lg rounded-md overflow-hidden m-3">
-                <img class="w-full object-cover" src="porto1.png" alt="Image">
-                <div class="p-5 flex-col gap-3 ">
-                    <div class="flex items-center gap-2">
-                        <span>Portofolio1</span>
-                    </div>
+    <div class="w-full min-h-screen bg-blue-200">
+        <div class="border-2 border-blue-200 w-3/4 h-fit mx-auto">
+            <h1 class="text-6xl text-left text-cyan-900 font-bold mt-24">
+                Portofolio Kami
+            </h1>
+            <div class="flex flex-col mt-10 mb-24 ">
+                <div class="flex flex-row grid-rows-2 justify-evenly">
+                    <img
+                        class="w-5/12 h-85 rounded-lg"
+                        src="porto1.png"
+                    />
+                    <img
+                        class="w-5/12 h-85 rounded-lg "
+                        src="porto2.png"
+                    />
+    
                 </div>
-            </div>
-
-            <div class="bg-gray-400 text-white min-h-[10rem] shadow-lg rounded-md overflow-hidden m-3">
-                <img class="w-full object-cover" src="porto2.png" alt="Image">
-                <div class="p-5 flex-col gap-3">
-                    <div class="flex items-center gap-2">
-                            <span>Portofolio2</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-gray-400 text-white min-h-[10rem] shadow-lg rounded-md overflow-hidden m-3">
-                <img class="w-full object-cover" src="porto3.png" alt="Image">
-                <div class="p-5 flex-col gap-3">
-                    <div class="flex items-center gap-2">
-                        <span>Portofolio3</span>
-                    </div>
+                <div class="flex flex-row grid-rows-2  mt-10 justify-evenly">
+                    <img
+                        class="w-5/12 h-85 rounded-lg"
+                        src="porto4.jpg"
+                    />
+                    <img
+                        class="w-5/12 h-85 rounded-lg"
+                        src="porto1.png"
+                    />
                 </div>
             </div>
         </div>
-
         {% for webPage in webPages %}
         <img src="{{webPage.image.url}}" alt="project" style="width: 350px">
         <h5>{{ webPage.judul }}</h5>
@@ -53,4 +48,6 @@
         <h5>{{ webPage.deskripsi }}</h5>
         {% endfor %}
     </div>
+
+
 {% endblock %}
