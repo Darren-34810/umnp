@@ -53,46 +53,45 @@
     </div>
 
     <!-- Contact Us Form Section -->
-    <div class="max-w-screen-2xl px-32 py-8 mx-auto">
-        <h2 class="font-bold text-2xl">Contact Us</h2>
-        <p class="font-medium text-gray-500 mt-2.5">Fill in your data and email us your inquiries</p>
-        <!-- Method and Action -->
+    <div class="max-w-screen-2xl px-5 sm:px-20 lg:px-32 py-10 sm:py-16 mx-auto">
+        <h2 class="font-bold text-2xl sm:text-3xl">Contact Us</h2>
+        <p class="font-medium text-sm sm:text-base text-gray-500 mt-2.5">Fill in your data and email us your inquiries</p>
         <form class="mt-4">
-            <div class="flex flex-col lg:flex-row justify-between gap-x-12">
+            <div class="flex flex-col lg:flex-row justify-between gap-x-12 gap-y-10">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.052181733224!2d106.61592027326353!3d-6.256856561255249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb56b25975f9%3A0x50c7d605ba8542f5!2sMultimedia%20Nusantara%20University!5e0!3m2!1sen!2sid!4v1671422361721!5m2!1sen!2sid"
-                    class="min-w-[20rem] min-h-[20rem] aspect-square border-4 border-black rounded-lg"
+                    class="sm:min-w-[20rem] min-h-[20rem] aspect-square border-4 border-black rounded-lg"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <div class="w-full flex flex-col gap-y-4">
-                    <div class="w-full flex">
+                    <div class="w-full flex flex-col sm:flex-row gap-4">
                         <div class="w-full flex flex-col">
                             <label for="name" class="font-semibold">Name</label>
-                            <input name="name" id="name" type="text" class="w-full rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1" />
+                            <input name="name" id="name" type="text" class="w-full border-none rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1" required />
                         </div>
-                        <div class="w-full flex flex-col ml-4">
+                        <div class="w-full flex flex-col">
                             <label for="inquiry" class="font-semibold">Inquiry</label>
-                            <input name="inquiry" id="inquiry" type="text" class="w-full rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1" />
+                            <input name="inquiry" id="inquiry" type="text" class="w-full border-none rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1" required />
                         </div>
                     </div>
-                    <div class="w-full flex">
+                    <div class="w-full flex flex-col sm:flex-row gap-4">
                         <div class="w-full flex flex-col">
                             <label for="email" class="font-semibold">Email</label>
-                            <input name="email" id="email" type="email" class="w-full rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1" />
+                            <input name="email" id="email" type="email" class="w-full border-none rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1" required />
                         </div>
-                        <div class="w-full flex flex-col ml-4">
+                        <div class="w-full flex flex-col">
                             <label for="phone" class="font-semibold">Phone</label>
-                            <input name="phone" id="phone" type="text" class="w-full rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1" />
+                            <input name="phone" id="phone" type="text" class="w-full border-none rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1" required />
                         </div>
                     </div>
                     <div class="flex flex-col h-full">
                         <label for="message" class="font-semibold">Message</label>
-                        <textarea name="message" id="message" type="text" class="resize-none h-full rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1"></textarea>
+                        <textarea name="message" id="message" type="text" class="resize-none h-full border-none rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-3 py-2 mt-1" required></textarea>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="block bg-umnp-primary font-semibold text-white rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-16 py-3 ml-auto mt-6">Submit</button>
+            <button type="submit" class="block w-full sm:w-fit bg-umnp-primary font-semibold text-white rounded-lg shadow-md shadow-[rgba(0,0,0,0.25)] px-16 py-3 ml-auto mt-6">Submit</button>
         </form>
     </div>
 {% endblock %}
