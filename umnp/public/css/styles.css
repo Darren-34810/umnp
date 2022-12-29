@@ -695,10 +695,6 @@ select {
   z-index: 10;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -733,8 +729,8 @@ select {
   margin-top: 2.5rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .mb-2 {
@@ -767,10 +763,6 @@ select {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
 }
 
 .mb-24 {
@@ -845,16 +837,16 @@ select {
   height: 100%;
 }
 
-.h-5\/6 {
-  height: 83.333333%;
-}
-
 .h-80 {
   height: 20rem;
 }
 
 .h-40 {
   height: 10rem;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
 }
 
 .h-fit {
@@ -875,12 +867,16 @@ select {
   height: 16.666667%;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.h-4 {
+  height: 1rem;
 }
 
 .min-h-\[20rem\] {
   min-height: 20rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-full {
@@ -898,14 +894,6 @@ select {
 
 .w-4\/5 {
   width: 80%;
-}
-
-.w-2\/6 {
-  width: 33.333333%;
-}
-
-.w-3\/6 {
-  width: 50%;
 }
 
 .w-1\/4 {
@@ -926,6 +914,10 @@ select {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
 }
 
 .w-screen {
@@ -1070,11 +1062,6 @@ select {
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#d8eefe\] {
   --tw-bg-opacity: 1;
   background-color: rgb(216 238 254 / var(--tw-bg-opacity));
@@ -1114,17 +1101,12 @@ select {
   background-color: rgba(0,0,0,0.25);
 }
 
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.p-8 {
+  padding: 2rem;
 }
 
 .py-12 {
@@ -1261,10 +1243,6 @@ select {
   font-weight: 600;
 }
 
-.leading-none {
-  line-height: 1;
-}
-
 .text-cyan-900 {
   --tw-text-opacity: 1;
   color: rgb(22 78 99 / var(--tw-text-opacity));
@@ -1273,11 +1251,6 @@ select {
 .text-\[\#094067\] {
   --tw-text-opacity: 1;
   color: rgb(9 64 103 / var(--tw-text-opacity));
-}
-
-.text-\[\#5F6C7B\] {
-  --tw-text-opacity: 1;
-  color: rgb(95 108 123 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -1333,10 +1306,6 @@ select {
   .sm\:-mx-20 {
     margin-left: -5rem;
     margin-right: -5rem;
-  }
-
-  .sm\:h-1\/2 {
-    height: 50%;
   }
 
   .sm\:px-20 {
