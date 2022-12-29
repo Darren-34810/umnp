@@ -1,0 +1,26 @@
+{% extends 'layouts/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="w-full h-screen">
+  <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+      <div class="w-1/2">
+        <div class="max-w-xl h-96 mx-auto">
+          <img src="https://i.ibb.co/5Gbfm2p/Page-not-found.png" />
+        </div>
+          <div class="w-fit mx-auto ">
+              <h1 class="text-7xl text-cyan-400 font-bold">Page Not Found!</h1>
+              <p class="text-center font-semibold py-3 font-light text-cyan-900 hover:bg-cyan-400">
+                <link>
+                <a href={%url  'home' %}>
+                  Go back home</a>
+                </link>
+              </p>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -21,3 +21,5 @@ urlpatterns = [
     path('', include("umnp.static_src.app.urls")),
     path("__reload__/", include("django_browser_reload.urls")),
 ]
+
+handler404 = "umnp.static_src.app.views.handle_not_found"
