@@ -1081,6 +1081,11 @@ select {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-umnp-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(9 64 103 / var(--tw-border-opacity));
+}
+
 .bg-blue-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
@@ -1123,6 +1128,15 @@ select {
 
 .bg-\[rgba\(0\2c 0\2c 0\2c 0\.25\)\] {
   background-color: rgba(0,0,0,0.25);
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500\/70 {
+  background-color: rgb(107 114 128 / 0.7);
 }
 
 .py-12 {
@@ -1274,6 +1288,16 @@ select {
   color: rgb(22 78 99 / var(--tw-text-opacity));
 }
 
+.text-umnp-medium {
+  --tw-text-opacity: 1;
+  color: rgb(37 98 141 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .text-\[\#094067\] {
   --tw-text-opacity: 1;
   color: rgb(9 64 103 / var(--tw-text-opacity));
@@ -1282,11 +1306,6 @@ select {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1307,6 +1326,11 @@ select {
 .text-umnp-dark {
   --tw-text-opacity: 1;
   color: rgb(9 64 103 / var(--tw-text-opacity));
+}
+
+.text-umnp-light {
+  --tw-text-opacity: 1;
+  color: rgb(216 238 254 / var(--tw-text-opacity));
 }
 
 .shadow-md {

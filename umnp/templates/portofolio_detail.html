@@ -2,10 +2,10 @@
 {% load static %}
 
 {% block content %}
-    <div  class="w-full h-screen" style="background: linear-gradient(rgba(49, 46, 129, 0.7), rgba(49, 46, 129, 0.7)),  url('{{webpages.image.url}}'); background-size: 100%;">
+    <div  class="w-full h-screen" style="background: linear-gradient(rgba(9, 64, 103, 0.8), rgba(9, 64, 103, 0.8)), url('{{webpages.image.url}}') center; background-size: 100%;">
         <div class="py-64 px-64 place-items-left flex flex-col">
             <h1 class="text-7xl text-white font-bold">{{webpages.judul}}</h1>
-            <button disabled class="w-32 mt-8 mb-6 text-sm bg-teal-800 text-white font-bold border-2 border-solid border-color-black px-4 py-2 rounded-lg">
+            <button disabled class="w-32 mt-8 mb-6 text-sm bg-gray-500/70 text-white font-bold px-4 py-2 rounded-lg">
                 {{webpages.tipe}}</button>
             <p class="text-lg text-white font-light w-3/4">{{webpages.deskripsi}}</p>
         </div>
@@ -13,7 +13,7 @@
 
     <div class="w-full h-max">
         <div class="px-32 pt-28 pb-16">
-            <h1 class="text-4xl text-cyan-900 font-bold">Gallery</h1>
+            <h1 class="text-4xl text-umnp-dark font-bold">Gallery</h1>
         </div>
         <div class="flex flex-col gap-y-2">
             <video class="w-full px-32" controls>
