@@ -8,11 +8,11 @@ from django.shortcuts import get_object_or_404
 def index(request):
     return render(request, 'index.html')
 
+
 def portofolio(request):
-    webPages = webPage.objects.all()
-    
-    return render(request, 'portofolio.html', {'webPages': webPages})
-    
+    webPages1 = webPage.objects.all()[0:2]
+    webPages2 = webPage.objects.all()[2:4]
+    return render(request, 'portofolio.html', {'webPages1': webPages1,'webPages2': webPages2})
 
 def contact(request):
     return render(request, 'contact.html')
