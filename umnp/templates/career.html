@@ -2,61 +2,46 @@
 {% load static %}
 
 {% block content %}
-    <div class="w-full h-screen">
-        <div class="flex flex-row">
-            <div class="w-1/2">
-                <div class="w-fit mx-auto my-60">
-                    <h1 class="text-4xl  md:text-7xl text-umnp-dark font-bold">Career</h1>
-                    <p class="text-lg font-light text-gray-500">
-                        Create A Better Future For Yourself.
-                    </p>                    
-                </div>
-            </div>
-            <div class="w-1/2 mt-40">
-                    <img
-                        class="w-1/2 mx-auto"                     
-                        src={% static '/images/career_asset.png' %}
-                        alt="image description"
-                    />
-                <!-- </div> -->
+<div class="w-full h-screen">
+    <div class="h-80 flex flex-col lg:flex-row justify-center items-center">
+        <div class="w-1/2">
+            <div class="w-fit mx-auto mt-40">
+        <h1 class=" text-4xl  md:text-7xl text-umnp-dark font-bold text-center">Career</h1>
+                <p class="text-lg font-light text-gray-500 text-center">
+                    Create A Better Future For Yourself.
+                </p>
             </div>
         </div>
+        <div class="w-1/2 mt-40">
+            <img src={% static '/images/career_asset.png' %} alt="image description" />
+            <!-- </div> -->
+        </div>
     </div>
+</div>
 
-    <div class="w-full h-96 bg-blue-200">
-        <div class="flex flex-row mx-auto w-4/5 pt-8">
-            <div class="w-1/2 h-full">
+<div class="w-full h-max bg-[#d8eefe] flex flex-col justify-center items-center py-12">
+    <div class="flex lg:flex-row flex-col mx-auto  pt-8">
+        <div class="w-full h-full">
+            <h1 class="text-center text-4xl text-black font-bold mt-10">
+                Career Opportunities
+            </h1>
+            <h2 class="mx-10 text-center text-gray-500 font-extralight mt-10">
+                A passionate, creative, and dedicated artist are always a great addition to our team. Listed below are all the current needs in our team. If you don't see your passion fitted in any of those positions, don't hesitate to send us an email at career@umnpictures.com with a link to your portfolios.
+            </h2>
+        </div>
+        <div class="w-full h-full">
+            <div class="w-fit mx-auto">
                 <h1 class="text-center text-4xl text-black font-bold mt-10">
-                    Career Opportunities
+                    Internship Program
                 </h1>
                 <h2 class="mx-10 text-center text-gray-500 font-extralight mt-10">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                    condimentum porttitor arcu, nec sollicitudin purus ultricies
-                    vulputate. Suspendisse potenti. Etiam suscipit faucibus nisi nec
-                    condimentum. Integer ultricies viverra eleifend. Curabitur
-                    convallis, felis id lobortis tempor, urna mauris maximus est, at
-                    maximus nulla lectus non urna. Proin a massa eu metus rutrum
-                    suscipit. Curabitur tincidunt dignissim rutrum.
+                    We offer an internship program for a minimum course of 2 months. Interns will be trained and expected to work with our team on ongoing projects. Work hours are from 08:00am - 17:00pm.
+
+                    Artists interested to apply, please send us a mail at intern@umnpictures.com along with your portfolios.
                 </h2>
-            </div>
-            <div class="w-1/2 h-full">
-                <div class="w-fit mx-auto">
-                    <h1 class="text-center text-4xl text-black font-bold mt-10">
-                        Internship Program
-                    </h1>
-                    <h2 class="mx-10 text-center text-gray-500 font-extralight mt-10">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nullam condimentum porttitor arcu, nec sollicitudin purus
-                        ultricies vulputate. Suspendisse potenti. Etiam suscipit
-                        faucibus nisi nec condimentum. Integer ultricies viverra
-                        eleifend. Curabitur convallis, felis id lobortis tempor,
-                        urna mauris maximus est, at maximus nulla lectus non urna.
-                        Proin a massa eu metus rutrum suscipit. Curabitur tincidunt
-                        dignissim rutrum.
-                    </h2>
-                    <div></div>
-                </div>
+                <div></div>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
