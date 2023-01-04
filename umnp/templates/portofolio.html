@@ -20,32 +20,28 @@
             <div class="flex flex-col mt-10 mb-24 ">
                 <div class="flex flex-row grid-rows-2 justify-evenly">
                     <img
-                        class="w-5/12 h-85 rounded-lg"
-                        src="porto1.png"
+                        class="w-5/12 h-80 rounded-lg"
+                        src="{% static 'images/porto1.png' %}"
                     />
                     <img
-                        class="w-5/12 h-85 rounded-lg "
-                        src="porto2.png"
+                        class="w-5/12 h-80 rounded-lg "
+                        src="{% static 'images/porto2.png' %}"
                     />
                 </div>
-                <div class="flex flex-row grid-rows-2  mt-10 justify-evenly">
+                
+                <div class="flex flex-row grid-rows-2 mt-10 justify-evenly">
                     <img
-                        class="w-5/12 h-85 rounded-lg"
-                        src="porto4.jpg"
+                        class="w-5/12 h-80 rounded-lg"
+                        src="{% static 'images/porto3.png' %}"
                     />
                     <img
-                        class="w-5/12 h-85 rounded-lg"
-                        src="porto1.png"
+                        class="w-5/12 h-80 rounded-lg "
+                        src="{% static 'images/porto4.jpg' %}"
                     />
                 </div>
             </div>
         </div>
-        {% for webPage in webPages %}
-        <img src="{{webPage.image.url}}" alt="project" style="width: 350px">
-        <h5>{{ webPage.judul }}</h5>
-        <h5>{{ webPage.tipe }}</h5>
-        <h5>{{ webPage.deskripsi }}</h5>
-        {% endfor %}
+
     </div>
 
 
