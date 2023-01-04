@@ -3,33 +3,34 @@
 
 {% block content %}
     <div  class="w-full h-screen" style="background: linear-gradient(rgba(9, 64, 103, 0.8), rgba(9, 64, 103, 0.8)), url('{{webpages.image.url}}') center; background-size: 100%;">
-        <div class="py-64 px-64 place-items-left flex flex-col">
-            <h1 class="text-7xl text-white font-bold">{{webpages.judul}}</h1>
+        <div class="px-16 py-16 lg:place-items-left lg:py-64 lg:px-64 flex flex-col">
+            <h1 class="text-4xl xl:text-7xl text-white font-bold">{{webpages.judul}}</h1>
             <button disabled class="w-32 mt-8 mb-6 text-sm bg-gray-500/70 text-white font-bold px-4 py-2 rounded-lg">
                 {{webpages.tipe}}</button>
-            <p class="text-lg text-white font-light w-3/4">{{webpages.deskripsi}}</p>
+            <p class="lg:text-lg text-white font-light w-3/4">{{webpages.deskripsi}}</p>
         </div>
     </div>
 
     <div class="w-full h-max">
-        <div class="px-32 pt-28 pb-16">
+        <div class="lg:px-32 lg:pt-28 lg:pb-32 px-8 pt-8 pb-8">
             <h1 class="text-4xl text-umnp-dark font-bold">Gallery</h1>
         </div>
         <div class="flex flex-col gap-y-2">
-            <video class="w-full px-32" controls>
-                <source src="{{webpages.video.url}}" type="video/mp4">
+            <video class="w-full lg:px-32 px-4" controls>
+                <source  src="{{webpages.video.url}}" type="video/mp4">
                 <source src="{{webpages.video.url}}" type="video/ogg">
                 <source src="{{webpages.video.url}}" type="video/webm">
                 Your browser does not support the video tag.
             </video>
-            <div class="flex flex-row gap-x-2 w-full" style="padding-left: 8rem;padding-right:8.5rem">
-                <img class="w-1/2" src="{{webpages.image_1.url}}">
-                <img class="w-1/2" src="{{webpages.image_2.url}}">
+            <div class="flex lg:gap-x-2 w-full flex-col lg:flex-row lg:pl-[128px] lg:pr-[136px] px-4 gap-y-2">
+                <img class="lg:w-1/2" src="{{webpages.image_1.url}}">
+                <img class="lg:w-1/2" src="{{webpages.image_2.url}}">
             </div>
-            <div class="flex flex-row gap-x-2 w-full" style="padding-left: 8rem;padding-right:8.5rem">
-                <img class="w-1/2" src="{{webpages.image_3.url}}">
-                <img class="w-1/2" src="{{webpages.image_4.url}}">
+            <div class="flex lg:gap-x-2 w-full flex-col lg:flex-row lg:pl-[128px] lg:pr-[136px] px-4 gap-y-2" >
+                <img class="lg:w-1/2" src="{{webpages.image_3.url}}">
+                <img class="lg:w-1/2" src="{{webpages.image_4.url}}">
             </div>
+
         </div>
     </div>
 <br>
