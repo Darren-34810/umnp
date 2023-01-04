@@ -40,6 +40,12 @@
                     />
                 </div>
             </div>
+            {% for webPage in webPages %}
+            <img src="{{webPage.image.url}}" alt="project" style="width: 350px">
+            <h5>{{ webPage.judul }}</h5>
+            <h5>{{ webPage.tipe }}</h5>
+            <h5>{{ webPage.deskripsi }}</h5>
+            {% endfor %}
         </div>
 
     </div>
