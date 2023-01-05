@@ -1174,6 +1174,14 @@ select {
   padding-bottom: 2rem;
 }
 
+.pl-72 {
+  padding-left: 18rem;
+}
+
+.pr-72 {
+  padding-right: 18rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1442,6 +1450,14 @@ select {
 
   .lg\:pr-\[136px\] {
     padding-right: 136px;
+  }
+
+  .lg\:pl-72 {
+    padding-left: 18rem;
+  }
+
+  .lg\:pr-72 {
+    padding-right: 18rem;
   }
 
   .lg\:text-lg {
