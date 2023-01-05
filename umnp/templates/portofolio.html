@@ -3,7 +3,7 @@
 
 {% block content %}
 <div class="w-full h-screen">
-    <div class="h-80 flex flex-col lg:flex-row justify-center items-center">
+    <div class="h-96 flex flex-col lg:flex-row justify-center items-center">
         <div class="w-1/2">
             <div class="w-fit mx-auto mt-40">
         <h1 class=" text-4xl  md:text-7xl text-umnp-dark font-bold text-center">Portofolio</h1>
@@ -12,7 +12,7 @@
                 </p>
             </div>
         </div>
-        <div class="w-1/2 mt-40 lg:mt-80">
+        <div class="w-1/2 mt-40 lg:mt-96">
             <img src={% static '/images/portofolio_asset1.png' %} alt="image description" />
             <!-- </div> -->
         </div>
@@ -24,28 +24,17 @@
         <h1 class="text-4xl xl:text-7xl text-left text-umnp-dark font-bold mt-24">
             Portofolio Kami
         </h1>
-        <div class="flex flex-col gap-y-2 mt-10 mb-10">
-            <div class="flex lg:gap-x-2 w-full flex-col lg:flex-row lg:pl-[128px] lg:pr-[136px] px-4 gap-y-2">
-                {% for webPage in webPages1%}
-                <img class="lg:w-1/2 lg:h-96 rounded-lg" src="{{webPage.image.url}}">
-                {% endfor %}
-
-            </div>
-            
-            <div class="flex lg:gap-x-2 w-full flex-col lg:flex-row lg:pl-[128px] lg:pr-[136px] px-4 gap-y-2">
-                {% for webPage in webPages2%}
-                <img class="lg:w-1/2 lg:h-96 rounded-lg" src="{{webPage.image.url}}">
+        <div class="max-w-6xl mx-auto py-2 px-6 xl:px-0">
+            <div class="products flex items-center flex-wrap">
+                {% for webPage in webPages%}
+                <div class="w-full xl:w-1/2 p-2 lg:p-6">
+                        <a href="/works/{{webPage.judul}}">
+                            <img class=" rounded-lg lg:h-[33rem]" src="{{webPage.image.url}}">
+                        </a>
+                    </div>
                 {% endfor %}
             </div>
-            <div class="flex lg:gap-x-2 w-full flex-col lg:flex-row lg:pl-[128px] lg:pr-[136px] px-4 gap-y-2">
-                {% for webPage in webPages3%}
-                <img class="lg:w-1/2 lg:h-96 rounded-lg" src="{{webPage.image.url}}">
-                {% endfor %}
-            </div>
-            <div class="mt-20"></div>
         </div>
     </div>
 </div>
-    </div>
-
 {% endblock %}
