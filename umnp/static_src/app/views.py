@@ -12,7 +12,8 @@ def index(request):
 def portofolio(request):
     webPages1 = webPage.objects.all()[0:2]
     webPages2 = webPage.objects.all()[2:4]
-    return render(request, 'portofolio.html', {'webPages1': webPages1,'webPages2': webPages2})
+    webPages3 = webPage.objects.all()[4:6]
+    return render(request, 'portofolio.html', {'webPages1': webPages1,'webPages2': webPages2, 'webPages3': webPages3})
 
 def contact(request):
     return render(request, 'contact.html')
