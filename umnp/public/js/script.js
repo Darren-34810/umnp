@@ -20,7 +20,7 @@ dropdown.addEventListener('click', close_dropdown)
 var destinationEmails = {
     'business': 'inquiry@umnpictures.com',
     'career': 'career@umnpictures.com',
-    'intern': 'intern@umnpictures.com',
+    'internship': 'intern@umnpictures.com',
 }
 
 var contactForm = document.querySelector('#contact_form')
